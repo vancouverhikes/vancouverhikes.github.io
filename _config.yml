@@ -1,14 +1,24 @@
-name : Foundation5/github pages/Jykill starter
-brand : My Site
-description : This is the description of my site
-keyword : 
-url : http://daigofuji.github.io/jekyll-foundation-6-starter/
-email : daigo@daigofujiwara.com
-twitter : DaigoFuji
-github : DaigoFuji
-author : Daigo Fujiwara
+name : Vancouver Hikes
+brand : Vancouver Hikes
+description : Description here!!
+keyword : Vancouver Hikes, vancouver hiking
+url : http://vancouverhikes.github.io/
+email : bryant.n.lim@gmail.com
+twitter : VancouverHikes
+github : VancouverHikes
+author : Bryant Nicholas Lim
 analytics : UA-8418273-8
 year : 2016
 markdown : kramdown
 exclude :
   - node_modules
+collections:
+  trails:
+    output: true
+    permalink: /trails/:path/
+defaults:
+  - scope:
+      path: "/trails"
+      type: trails
+    values:
+      layout: trails
